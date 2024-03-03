@@ -31,6 +31,7 @@
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ ucwords($worker->mother_name) }}</td>
                         <td class="px-6 py-4 whitespace-nowrap text-base font-medium">
                             <a href="{{ route('worker.edit', $worker->id) }}" class="text-indigo-600 hover:text-indigo-900 me-2">Edit</a>
+                            <a href="{{ route('worker.show', $worker->id) }}" class="text-indigo-600 hover:text-indigo-900 me-2">Show</a>
                             <form action="{{ route('worker.destroy', $worker->id) }}" method="POST" class="inline">
                                 @csrf
                                 @method('DELETE')

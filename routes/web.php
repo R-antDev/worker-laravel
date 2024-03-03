@@ -30,7 +30,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('worker', WorkerController::class)
-    ->only('index', 'create', 'store', 'edit', 'update', 'destroy')
+    ->only('index', 'create', 'store', 'edit', 'update', 'destroy', 'show')
     ->middleware('auth', 'verified');
 
 

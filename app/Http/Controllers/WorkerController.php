@@ -52,7 +52,7 @@ class WorkerController extends Controller
      */
     public function show(Worker $worker)
     {
-        //
+        return view('worker.show',compact('worker'));
     }
 
     /**
